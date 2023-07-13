@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form InpUT</title>
+</head>
+<body>
+    <h2>PESANAN LAUNDRY</h2>
+    <form method="post" action="insert_data.php">
+        <label for="kode_pesanan">Kode Pesanan:</label>
+        <input type="text" name="kode_pesanan" required><br><br>
+
+        <label for="id_pelanggan">ID Pelanggan:</label>
+        <input type="text" name="id_pelanggan" required><br><br>
+
+        <label for="tanggal">Tanggal:</label>
+        <input type="text" name="tanggal" required><br><br>
+
+        <label for="harga_paket">Harga Paket:</label>
+        <select name="harga_paket">
+            <option value="7000">Personal</option>
+            <option value="8000">Keluarga</option>
+            <option value="10000">Business</option>
+        </select><br><br>
+
+        <label for="berat_paket">Berat Paket (Kg):</label>
+        <input type="number" name="berat_paket" required><br><br>
+
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
